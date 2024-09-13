@@ -1,0 +1,33 @@
+.frame-child {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    border-radius: 50px;
+    background: linear-gradient(180deg, #d9d9d9, #edff7e);
+    border: 1px solid #303030;
+    box-sizing: border-box;
+    width: 932px;
+    height: 698px;
+}
+.usermain-inner {
+    width: 932px;
+    position: relative;
+    height: 698px;
+}
+.usermain {
+    width: 100%;
+    position: relative;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 18px;
+    background: linear-gradient(180deg, #fef7ff, #dfcdf5 51%, #dfcef5 99.99%, #4500c3);
+    border: 8px solid #fef7ff;
+    box-sizing: border-box;
+    height: 784px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+}
+

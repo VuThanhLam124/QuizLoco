@@ -1,0 +1,159 @@
+1. Đăng nhập người dùng (User Login)
+LOC: 60 | Mức độ: Đơn giản
+Màn hình pop-up cho phép người dùng nhập email và mật khẩu để đăng nhập. Có tùy chọn đăng ký tài khoản mới hoặc đặt lại mật khẩu nếu quên.
+
+2. Đăng ký người dùng (User Register)
+LOC: 60 | Mức độ: Đơn giản
+Màn hình pop-up cho phép người dùng đăng ký bằng cách nhập thông tin: Họ tên, giới tính, email, số điện thoại, và cần xác thực qua email trước khi truy cập hệ thống.
+
+3. Đặt lại mật khẩu (Reset Password)
+LOC: 120 | Mức độ: Trung bình
+Người dùng nhập email để nhận liên kết đặt lại mật khẩu. Liên kết chỉ khả dụng trong một khoảng thời gian cụ thể và yêu cầu nhập mật khẩu mới hai lần để xác nhận.
+
+4. Xác thực người dùng (User Authorization)
+LOC: 240 | Mức độ: Phức tạp
+Thực hiện cơ chế phân quyền, xác định vai trò của người dùng đăng nhập và hạn chế truy cập vào các trang không được phép.
+
+5. Hồ sơ người dùng (User Profile)
+LOC: 60 | Mức độ: Đơn giản
+Màn hình cho phép người dùng chỉnh sửa thông tin cá nhân, bao gồm tên, giới tính và ảnh đại diện, nhưng không được thay đổi email.
+
+6. Đổi mật khẩu (Change Password)
+LOC: 60 | Mức độ: Đơn giản
+Màn hình cho phép người dùng thay đổi mật khẩu bằng cách nhập mật khẩu hiện tại và mật khẩu mới hai lần.
+
+7. Trang chủ (Home)
+LOC: 120 | Mức độ: Trung bình
+Hiển thị các bài viết nổi bật, danh sách các môn học, và các bài viết mới nhất với thông tin tóm tắt và liên kết đến chi tiết.
+
+8. Danh sách Blog (Blogs List)
+LOC: 60 | Mức độ: Đơn giản
+Hiển thị danh sách bài viết theo thứ tự cập nhật, kèm theo hộp tìm kiếm bài viết, danh mục, và các bài viết mới nhất.
+
+9. Chi tiết Blog (Blog Details)
+LOC: 60 | Mức độ: Đơn giản
+Hiển thị chi tiết bài viết bao gồm tiêu đề, tác giả, ngày cập nhật, danh mục và nội dung bài viết.
+
+10. Danh sách môn học (Subjects List)
+LOC: 240 | Mức độ: Phức tạp
+Hiển thị danh sách môn học theo thứ tự cập nhật và có thể lọc, tìm kiếm theo danh mục hoặc tiêu đề. Người dùng có thể nhấn vào để xem chi tiết hoặc đăng ký môn học.
+
+11. Chi tiết môn học (Subject Details)
+LOC: 120 | Mức độ: Trung bình
+Hiển thị thông tin chi tiết của môn học bao gồm tiêu đề, thông tin tóm tắt, giá bán, và các tùy chọn đăng ký môn học.
+
+12. Đăng ký môn học (Subject Register)
+LOC: 120 | Mức độ: Trung bình
+Màn hình pop-up cho phép người dùng đăng ký môn học bằng cách chọn gói học và nhập thông tin cá nhân (nếu chưa đăng nhập).
+
+13. Đăng ký của tôi (My Registrations)
+LOC: 60 | Mức độ: Đơn giản
+Hiển thị danh sách các môn học mà người dùng đã đăng ký với các thông tin chi tiết như thời gian, trạng thái, và chi phí.
+
+14. Danh sách bài thực hành (Practices List)
+LOC: 120 | Mức độ: Trung bình
+Hiển thị danh sách các bài kiểm tra mà người dùng đã thực hiện.
+
+15. Chi tiết bài thực hành (Practice Details)
+LOC: 60 | Mức độ: Đơn giản
+Cho phép người dùng nhập hoặc xem thông tin bài thực hành hiện tại.
+
+16. Thi mô phỏng (Simulation Exams)
+LOC: 120 | Mức độ: Trung bình
+Hiển thị danh sách các bài thi mô phỏng mà người dùng có thể thực hiện, có thể lọc theo môn học và tìm kiếm theo tên bài thi.
+
+17. Xử lý bài kiểm tra (Quiz Handle)
+LOC: 240 | Mức độ: Phức tạp
+Màn hình cho phép người dùng duyệt và trả lời các câu hỏi trong bài kiểm tra.
+
+18. Xem lại bài kiểm tra (Quiz Review)
+LOC: 240 | Mức độ: Phức tạp
+Màn hình cho phép người dùng xem lại chi tiết bài kiểm tra mà họ vừa thực hiện.
+
+19. Bảng điều khiển (Dashboard)
+LOC: 240 | Mức độ: Phức tạp
+Hiển thị thống kê về các môn học mới, lượt đăng ký (thành công, bị hủy, đã nộp), doanh thu, khách hàng, và xu hướng đơn hàng trong 7 ngày qua. Thời gian bắt đầu và kết thúc có thể điều chỉnh được.
+
+20. Chi tiết bài viết (Post Details)
+LOC: 120 | Mức độ: Trung bình
+Hiển thị chi tiết thông tin bài viết (thumbnail, danh mục, tiêu đề, mô tả ngắn gọn) và cho phép người dùng thêm, xem hoặc chỉnh sửa.
+
+21. Danh sách slider (Sliders List)
+LOC: 60 | Mức độ: Đơn giản
+Hiển thị danh sách các slider theo trang với thông tin như id, tiêu đề, hình ảnh, backlink, và trạng thái. Người dùng có thể tìm kiếm hoặc chỉnh sửa từng slider.
+
+22. Chi tiết slider (Slider Details)
+LOC: 60 | Mức độ: Đơn giản
+Hiển thị chi tiết thông tin về slider (hình ảnh, tiêu đề, backlink, trạng thái, ghi chú).
+
+23. Danh sách môn học (Subjects List - Course Content)
+LOC: 120 | Mức độ: Trung bình
+Hiển thị danh sách môn học của khóa học theo trang. Người dùng có thể lọc theo danh mục khóa học và trạng thái, tìm kiếm theo tên, thêm khóa học mới hoặc chỉnh sửa thông tin khóa học.
+
+24. Thêm môn học mới (New Subject)
+LOC: 120 | Mức độ: Trung bình
+Màn hình hiển thị cho phép người dùng nhập thông tin môn học mới như tên, hình ảnh thumbnail, danh mục, trạng thái và mô tả.
+
+25. Chi tiết môn học (Subject Details - Course Content)
+LOC: 240 | Mức độ: Phức tạp
+Trang này cho phép admin và chuyên gia chuẩn bị thông tin khóa học, bao gồm thông tin chung, kích thước và gói giá. Chỉ admin có thể thay đổi trạng thái khóa học thành "Đã xuất bản" hoặc "Chưa xuất bản", thêm/sửa các gói giá.
+
+26. Kích thước môn học (Subject Dimension)
+LOC: 60 | Mức độ: Đơn giản
+Trang này cho phép admin hoặc chuyên gia nhập hoặc chỉnh sửa thông tin về kích thước môn học, bao gồm các chi tiết như loại, tên, và mô tả.
+
+27. Gói giá (Price Package)
+LOC: 60 | Mức độ: Đơn giản
+Trang này cho phép admin nhập hoặc chỉnh sửa thông tin về gói giá môn học, bao gồm tên, thời gian truy cập (tính bằng tháng), trạng thái, giá gốc, giá bán và mô tả.
+
+28. Danh sách bài học (Subject Lessons)
+LOC: 120 | Mức độ: Trung bình
+Hiển thị danh sách các bài học trong một gói môn học đã chọn. Tại đây, admin hoặc chuyên gia có thể kích hoạt/vô hiệu hóa bài học hoặc thêm/chỉnh sửa các bài học.
+
+29. Chi tiết bài học (Lesson Details)
+LOC: 120 | Mức độ: Trung bình
+Trang cho phép admin hoặc chuyên gia nhập và chỉnh sửa thông tin chi tiết về bài học.
+
+30. Danh sách câu hỏi (Questions List)
+LOC: 120 | Mức độ: Trung bình
+Hiển thị danh sách các câu hỏi cho một môn học hoặc khóa học cụ thể. Admin hoặc chuyên gia có thể lọc câu hỏi theo môn học, bài học, cấp độ và trạng thái, cũng như tìm kiếm câu hỏi bằng nội dung.
+
+31. Chi tiết câu hỏi (Question Details)
+LOC: 240 | Mức độ: Phức tạp
+Trang cho phép admin hoặc chuyên gia nhập hoặc chỉnh sửa thông tin câu hỏi, bao gồm chủ đề, kích thước, bài học, trạng thái, nội dung, phương tiện (hình ảnh, âm thanh, video – với tùy chọn xem trước), các phương án trả lời (với đáp án đúng được đánh dấu), và giải thích.
+
+32. Nhập câu hỏi (Question Import)
+LOC: 120 | Mức độ: Trung bình
+Đây là màn hình pop-up cho phép người dùng chọn tệp để nhập các câu hỏi từ tệp vào hệ thống. Người dùng cũng có tùy chọn tải xuống mẫu tệp nhập.
+
+33. Danh sách bài kiểm tra (Quizzes List)
+LOC: 120 | Mức độ: Trung bình
+Hiển thị danh sách các bài kiểm tra theo trang. Người dùng có thể lọc danh sách theo môn học và loại bài kiểm tra, cũng như tìm kiếm bài kiểm tra bằng tên. Người dùng có thể thêm mới hoặc chỉnh sửa bài kiểm tra.
+
+34. Chi tiết bài kiểm tra (Quiz Details)
+LOC: 120 | Mức độ: Trung bình
+Trang cho phép người dùng nhập hoặc chỉnh sửa thông tin bài kiểm tra.
+
+35. Danh sách đăng ký (Registrations List)
+LOC: 120 | Mức độ: Trung bình
+Hiển thị danh sách các đăng ký của người dùng bao gồm thông tin chi tiết: id, email, thời gian đăng ký, môn học, gói đăng ký, tổng chi phí, trạng thái và thời hạn. Người dùng có thể thêm mới hoặc chỉnh sửa đăng ký.
+
+36. Chi tiết đăng ký (Registration Details)
+LOC: 120 | Mức độ: Trung bình
+Trang hiển thị thông tin chi tiết về đăng ký, cho phép người dùng thay đổi trạng thái đăng ký, thông tin cá nhân, và thêm ghi chú. Nếu một email đăng ký mới, hệ thống sẽ tạo tài khoản và gửi thông tin đăng nhập.
+
+37. Danh sách người dùng (Users List)
+LOC: 60 | Mức độ: Đơn giản
+Hiển thị danh sách người dùng theo trang với các thông tin như id, họ tên, giới tính, email, vai trò và trạng thái. Admin có thể lọc danh sách theo vai trò, giới tính, trạng thái và tìm kiếm người dùng bằng tên hoặc email.
+
+38. Chi tiết người dùng (User Details)
+LOC: 60 | Mức độ: Đơn giản
+Trang cho phép admin thêm mới, chỉnh sửa hoặc xem chi tiết người dùng, bao gồm các thông tin như tên, email, giới tính, vai trò, địa chỉ, và trạng thái.
+
+39. Danh sách cài đặt (Settings List)
+LOC: 60 | Mức độ: Đơn giản
+Hiển thị danh sách cài đặt với các thông tin như id, loại, giá trị, thứ tự và trạng thái. Admin có thể tìm kiếm và lọc theo loại cài đặt, cũng như thêm mới hoặc chỉnh sửa cài đặt.
+
+40. Chi tiết cài đặt (Setting Details)
+LOC: 60 | Mức độ: Đơn giản
+Trang cho phép admin thêm mới, chỉnh sửa hoặc xem chi tiết cài đặt, bao gồm thông tin như loại, giá trị, thứ tự, mô tả, và trạng thái.
