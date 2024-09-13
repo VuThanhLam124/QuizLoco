@@ -1,1 +1,1 @@
-# QuizLoco
+# Quiz_Project
