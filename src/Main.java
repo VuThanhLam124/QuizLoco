@@ -1,17 +1,14 @@
 import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.SQLException;
 
 public class Main {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws SQLException {
+        try {
+            Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/mysql", "root", "12345678");
+            System.out.println("Connected to MySQL database");
+        } catch (Exception e) {
 
-        // Create a new instance of MyConnection
-        MyConnection myConnection  = new MyConnection();
-//        MyConnection myConnection = new MyConnection();
-        // Get a connection
-        Connection con = myConnection.getConnection();
-        if (con != null) {
-            System.out.println("Connection established");
-        } else {
-            System.out.println("Connection failed");
         }
     }
 }
