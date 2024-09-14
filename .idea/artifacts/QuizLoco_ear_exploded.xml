@@ -1,0 +1,11 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-ear" name="QuizLoco:ear exploded">
+    <output-path>$PROJECT_DIR$/out/artifacts/QuizLoco_ear_exploded</output-path>
+    <root id="root">
+      <element id="javaee-facet-resources" facet="QuizLoco/javaeeApplication/javaEEApplication" />
+      <element id="directory" name="web.war">
+        <element id="artifact" artifact-name="QuizLoco:war exploded" />
+      </element>
+    </root>
+  </artifact>
+</component>
