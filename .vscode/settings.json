@@ -1,0 +1,12 @@
+{
+    "jdk.advanced.disable.nbjavac": true,
+    "jdk.java.imports.groups": [
+
+        "java",
+        "javax",
+        "org",
+        "com",
+        ""
+    ],
+    "java.jdt.ls.java.home": ""
+}

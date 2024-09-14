@@ -23,10 +23,12 @@
     <exclude-output />
     <content url="file://$MODULE_DIR$">
       <sourceFolder url="file://$MODULE_DIR$/src" isTestSource="false" />
+      <excludePattern pattern="C:\Users\ADMIN\anaconda3\envs\QuizLoco\python.exe" />
     </content>
     <orderEntry type="inheritedJdk" />
+    <orderEntry type="library" name="Python 3.10 (QuizLoco) interpreter library" level="application" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="library" name="Mojarra-2.4.0" level="project" />
-    <orderEntry type="library" name="Java EE 6-Java EE 6" level="project" />
+    <orderEntry type="library" exported="" scope="PROVIDED" name="Java EE 6-Java EE 6" level="project" />
   </component>
 </module>
