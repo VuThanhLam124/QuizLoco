@@ -1,0 +1,134 @@
+-- Insert data into Users table
+INSERT INTO Users (username, email, password_hash, full_name, gender, user_role, status)
+VALUES
+('huy123', 'huy123@example.com', 'hashed_password', 'Nguyen Van Huy', 'Male', 'student', 'active'),
+('dang123', 'dang123@example.com', 'hashed_password', 'Tran Van Dang', 'Male', 'student', 'active'),
+('dat123', 'dat123@example.com', 'hashed_password', 'Le Van Dat', 'Male', 'admin', 'active'),
+('vinh123', 'vinh123@example.com', 'hashed_password', 'Nguyen Van Vinh', 'Male', 'student', 'active'),
+('lam123', 'lam123@example.com', 'hashed_password', 'Pham Van Lam', 'Male', 'expert', 'active'),
+('hoa123', 'hoa123@example.com', 'hashed_password', 'Tran Thi Hoa', 'Female', 'student', 'active'),
+('thuy123', 'thuy123@example.com', 'hashed_password', 'Nguyen Thi Thuy', 'Female', 'student', 'active'),
+('minh123', 'minh123@example.com', 'hashed_password', 'Pham Minh Quang', 'Male', 'admin', 'active'),
+('linh123', 'linh123@example.com', 'hashed_password', 'Nguyen Thi Linh', 'Female', 'expert', 'active'),
+('hung123', 'hung123@example.com', 'hashed_password', 'Bui Van Hung', 'Male', 'student', 'active');
+
+-- Insert data into Subjects table
+INSERT INTO Subjects (title, description, category, status, created_by)
+VALUES
+('Mathematics', 'Basic mathematics course', 'Science', 'active', 1),
+('Physics', 'Basic physics course', 'Science', 'active', 1),
+('Chemistry', 'Basic chemistry course', 'Science', 'active', 2),
+('English', 'Basic English course', 'Languages', 'active', 2),
+('History', 'World history course', 'Humanities', 'active', 3),
+('Geography', 'World geography course', 'Humanities', 'active', 3),
+('Programming', 'Intro to programming', 'Technology', 'active', 4),
+('Database Systems', 'Intro to databases', 'Technology', 'active', 5),
+('Artificial Intelligence', 'AI basics', 'Technology', 'active', 5),
+('Economics', 'Introduction to economics', 'Business', 'active', 4);
+
+-- Insert data into Lessons table
+INSERT INTO Lessons (subject_id, title, content, `order`, status)
+VALUES
+(1, 'Lesson 1: Algebra', 'Content about Algebra', 1, 'active'),
+(1, 'Lesson 2: Calculus', 'Content about Calculus', 2, 'active'),
+(2, 'Lesson 1: Newton\'s Laws', 'Content about Newton\'s laws', 1, 'active'),
+(2, 'Lesson 2: Thermodynamics', 'Content about Thermodynamics', 2, 'active'),
+(3, 'Lesson 1: Elements', 'Content about Elements', 1, 'active'),
+(3, 'Lesson 2: Chemical Reactions', 'Content about Chemical Reactions', 2, 'active'),
+(4, 'Lesson 1: Grammar', 'Content about English Grammar', 1, 'active'),
+(4, 'Lesson 2: Vocabulary', 'Content about English Vocabulary', 2, 'active'),
+(5, 'Lesson 1: Ancient Civilizations', 'Content about ancient civilizations', 1, 'active'),
+(6, 'Lesson 1: Continents and Oceans', 'Content about continents and oceans', 1, 'active');
+
+-- Insert data into Quizzes table
+INSERT INTO Quizzes (subject_id, title, description, time_limit, passing_score, status)
+VALUES
+(1, 'Quiz 1: Algebra', 'Quiz about Algebra', 30, 50.00, 'active'),
+(2, 'Quiz 1: Newton\'s Laws', 'Quiz about Newton\'s Laws', 30, 60.00, 'active'),
+(3, 'Quiz 1: Elements', 'Quiz about Elements', 30, 50.00, 'active'),
+(4, 'Quiz 1: Grammar', 'Quiz about Grammar', 30, 50.00, 'active'),
+(5, 'Quiz 1: Ancient Civilizations', 'Quiz about Ancient Civilizations', 30, 50.00, 'active'),
+(6, 'Quiz 1: Continents', 'Quiz about Continents', 30, 50.00, 'active'),
+(7, 'Quiz 1: Programming Basics', 'Quiz about Programming Basics', 30, 50.00, 'active'),
+(8, 'Quiz 1: SQL Queries', 'Quiz about SQL Queries', 30, 50.00, 'active'),
+(9, 'Quiz 1: AI Concepts', 'Quiz about AI Concepts', 30, 50.00, 'active'),
+(10, 'Quiz 1: Microeconomics', 'Quiz about Microeconomics', 30, 50.00, 'active');
+
+-- Insert data into Questions table
+INSERT INTO Questions (quiz_id, content, question_type, difficulty_level)
+VALUES
+(1, 'What is the derivative of x^2?', 'MCQ', 'easy'),
+(2, 'What is the first law of Newton?', 'MCQ', 'medium'),
+(3, 'What is the chemical symbol for Gold?', 'MCQ', 'easy'),
+(4, 'Choose the correct form of verb.', 'MCQ', 'easy'),
+(5, 'Which civilization built the pyramids?', 'MCQ', 'easy'),
+(6, 'What is the largest ocean?', 'MCQ', 'medium'),
+(7, 'What is a for loop?', 'MCQ', 'easy'),
+(8, 'What is a primary key?', 'MCQ', 'medium'),
+(9, 'What is a neural network?', 'MCQ', 'hard'),
+(10, 'What is supply and demand?', 'MCQ', 'medium');
+
+-- Insert data into Answers table
+INSERT INTO Answers (question_id, content, is_correct)
+VALUES
+(1, '2x', TRUE),
+(2, 'An object at rest stays at rest', TRUE),
+(3, 'Au', TRUE),
+(4, 'He is reading', TRUE),
+(5, 'Egyptians', TRUE),
+(6, 'Pacific Ocean', TRUE),
+(7, 'A loop that repeats a fixed number of times', TRUE),
+(8, 'A unique key that identifies records', TRUE),
+(9, 'A computational model based on the human brain', TRUE),
+(10, 'The relationship between price and quantity', TRUE);
+
+-- Insert data into Registrations table
+INSERT INTO Registrations (user_id, subject_id, expiration_date, status, price_paid)
+VALUES
+(1, 1, '2024-12-31', 'active', 100.00),
+(2, 2, '2024-12-31', 'active', 100.00),
+(3, 3, '2024-12-31', 'active', 100.00),
+(4, 4, '2024-12-31', 'active', 100.00),
+(5, 5, '2024-12-31', 'active', 100.00),
+(6, 6, '2024-12-31', 'active', 100.00),
+(7, 7, '2024-12-31', 'active', 100.00),
+(8, 8, '2024-12-31', 'active', 100.00),
+(9, 9, '2024-12-31', 'active', 100.00),
+(10, 10, '2024-12-31', 'active', 100.00);
+
+-- Insert data into BlogPosts table
+INSERT INTO BlogPosts (title, content, author_id, status)
+VALUES
+('Introduction to Mathematics', 'This post explains the basics of mathematics', 1, 'published'),
+('Understanding Physics', 'This post explains the laws of physics', 2, 'published'),
+('All About Chemistry', 'This post explains chemical reactions', 3, 'published'),
+('Learning English', 'This post explains grammar and vocabulary', 4, 'published'),
+('History of Ancient Civilizations', 'This post covers ancient civilizations', 5, 'published'),
+('Geography Overview', 'This post explains geography basics', 6, 'published'),
+('Programming Basics', 'This post explains programming concepts', 7, 'published'),
+('Database Concepts', 'This post explains database concepts', 8, 'published'),
+('AI Basics', 'This post explains artificial intelligence', 9, 'published'),
+('Introduction to Economics', 'This post explains basic economics', 10, 'published');
+
+-- Insert data into Sliders table
+INSERT INTO Sliders (title, image_url, link_url, `order`, status)
+VALUES
+('Welcome to Mathematics', 'https://example.com/math.jpg', 'https://example.com/math', 1, 'active'),
+('Learn Physics', 'https://example.com/physics.jpg', 'https://example.com/physics', 2, 'active'),
+('Explore Chemistry', 'https://example.com/chemistry.jpg', 'https://example.com/chemistry', 3, 'active'),
+('Improve English', 'https://example.com/english.jpg', 'https://example.com/english', 4, 'active'),
+('Ancient History', 'https://example.com/history.jpg', 'https://example.com/history', 5, 'active');
+
+-- Insert data into PricePackages table
+INSERT INTO PricePackages (subject_id, name, description, price, duration_months, status)
+VALUES
+(1, 'Basic Package', 'Access to all lessons', 100.00, 6, 'active'),
+(2, 'Premium Package', 'Access to all lessons and quizzes', 150.00, 12, 'active'),
+(3, 'Basic Package', 'Access to all lessons', 100.00, 6, 'active'),
+(4, 'Premium Package', 'Access to all lessons and quizzes', 150.00, 12, 'active'),
+(5, 'Basic Package', 'Access to all lessons', 100.00, 6, 'active'),
+(6, 'Premium Package', 'Access to all lessons and quizzes', 150.00, 12, 'active'),
+(7, 'Basic Package', 'Access to all lessons', 100.00, 6, 'active'),
+(8, 'Premium Package', 'Access to all lessons and quizzes', 150.00, 12, 'active'),
+(9, 'Basic Package', 'Access to all lessons', 100.00, 6, 'active'),
+(10, 'Premium Package', 'Access to all lessons and quizzes', 150.00, 12, 'active');
