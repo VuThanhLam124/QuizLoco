@@ -39,6 +39,11 @@ public class DBConnect {
             // Execute the query and get the result set
             rs = stmt.executeQuery(sql);
 
+            if (rs != null) {
+                System.out.println("Data fetched successfully");
+            } else {
+                System.out.println("Failed to fetch data");
+            }
         } catch (SQLException e) {
             System.out.println("SQL query execution failed");
             e.printStackTrace();

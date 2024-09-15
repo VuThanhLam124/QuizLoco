@@ -100,7 +100,8 @@ CREATE TABLE BlogPosts (
     status VARCHAR(20),
     created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
     updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
-    FOREIGN KEY (author_id) REFERENCES Users(id)
+    FOREIGN KEY (author_id) REFERENCES Users(id),
+    avatar mediumblob null
 );
 
 CREATE TABLE Settings (
@@ -163,3 +164,26 @@ CREATE TABLE PricePackages (
     updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
     FOREIGN KEY (subject_id) REFERENCES Subjects(id)
 );
+
+CREATE PROCEDURE UpdateUserAvatar(IN userId INT, IN avatarFilePath VARCHAR(255))
+BEGIN 
+    -- MySQL thinks the procedure ends here because of the semicolon
+    -- Update Users
+    UPDATE Users
+    SET avatar = LOAD_FILE(avatarFilePath)
+    WHERE id = userId;
+END;
+
+CREATE PROCEDURE UpdateSubjectAvatar(IN userId INT, IN avatarFilePath VARCHAR(255))
+BEGIN 
+    UPDATE Subjects
+    SET avatar = LOAD_FILE(avatarFilePath)
+    WHERE id = userId;
+END;
+
+CREATE PROCEDURE UpdateBlogPostAvatar(IN userId INT, IN avatarFilePath VARCHAR(255))
+BEGIN 
+    UPDATE BlogPosts
+    SET avatar = LOAD_FILE(avatarFilePath)
+    WHERE id = userId;
+END;

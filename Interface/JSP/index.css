@@ -1,0 +1,123 @@
+.title {
+    align-self: stretch;
+    position: relative;
+    letter-spacing: -0.03em;
+    line-height: 120%;
+}
+.subtitle {
+    align-self: stretch;
+    position: relative;
+    font-size: 32px;
+    line-height: 120%;
+}
+.text-content-title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 8px;
+}
+.button1 {
+    position: relative;
+    line-height: 100%;
+}
+.button {
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 8px;
+    background-color: #2c2c2c;
+    border: 1px solid #2c2c2c;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 12px;
+}
+.user-icon {
+    width: 16px;
+    position: relative;
+    height: 16px;
+    overflow: hidden;
+    flex-shrink: 0;
+}
+.button3 {
+    position: relative;
+    line-height: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.button2 {
+    border-radius: 8px;
+    background-color: #434343;
+    border: 1px solid #bf6a02;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 12px;
+    gap: 8px;
+    text-align: justify;
+}
+.button-group {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+    text-align: left;
+    font-size: 16px;
+    color: #f5f5f5;
+}
+.hero-image1 {
+    align-self: stretch;
+    background: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)), linear-gradient(180deg, #fff, rgba(213, 250, 243, 0.75) 35%, rgba(89, 235, 209, 0));
+    height: 442px;
+    overflow: hidden;
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 160px 24px;
+    box-sizing: border-box;
+    gap: 32px;
+    mix-blend-mode: darken;
+}
+.hero-image {
+    width: 478px;
+    border-radius: 70px;
+    background: linear-gradient(180deg, #ede63c, rgba(77, 75, 17, 0.25));
+    border: 1px solid #000;
+    box-sizing: border-box;
+    height: 430px;
+    overflow: hidden;
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    mix-blend-mode: hard-light;
+}
+.interface {
+    width: 100%;
+    position: relative;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 18px;
+    background: linear-gradient(180deg, #fef7ff, #dfcdf5 51%, #dfcef5 99.99%, #4500c3);
+    border: 8px solid #fef7ff;
+    box-sizing: border-box;
+    height: 784px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    text-align: center;
+    font-size: 72px;
+    color: #0c0c0d;
+    font-family: Inter;
+}
+
