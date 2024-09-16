@@ -165,25 +165,32 @@ CREATE TABLE PricePackages (
     FOREIGN KEY (subject_id) REFERENCES Subjects(id)
 );
 
+-- Change the delimiter to $$ so MySQL doesn't terminate the procedure at the first semicolon
+DELIMITER $$
+
 CREATE PROCEDURE UpdateUserAvatar(IN userId INT, IN avatarFilePath VARCHAR(255))
 BEGIN 
-    -- MySQL thinks the procedure ends here because of the semicolon
-    -- Update Users
+    -- Update Users table with the avatar from the given file path
     UPDATE Users
     SET avatar = LOAD_FILE(avatarFilePath)
     WHERE id = userId;
-END;
+END$$
 
 CREATE PROCEDURE UpdateSubjectAvatar(IN userId INT, IN avatarFilePath VARCHAR(255))
 BEGIN 
+    -- Update Subjects table with the avatar from the given file path
     UPDATE Subjects
     SET avatar = LOAD_FILE(avatarFilePath)
     WHERE id = userId;
-END;
+END$$
 
 CREATE PROCEDURE UpdateBlogPostAvatar(IN userId INT, IN avatarFilePath VARCHAR(255))
 BEGIN 
+    -- Update BlogPosts table with the avatar from the given file path
     UPDATE BlogPosts
     SET avatar = LOAD_FILE(avatarFilePath)
     WHERE id = userId;
-END;
+END$$
+
+-- Restore the delimiter back to semicolon
+DELIMITER ;
