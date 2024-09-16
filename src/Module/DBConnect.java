@@ -51,6 +51,11 @@ public class DBConnect {
         return rs;
     }
 
+    public Connection getConnection() {
+        return conn;
+        
+    }
+
     // Main method to test the connection and data retrieval
     public static void main(String[] args) {
         DBConnect db = new DBConnect();
